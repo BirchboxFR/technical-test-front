@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true, // Enabled for stricter type-checking
+    "noImplicitAny": true, // Ensures all 'any' types are explicit
+    "strictNullChecks": true, // Enables strict null and undefined checks
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "typeRoots": ["./node_modules/@types", "./types", "./types/*"],
+    "baseUrl": ".",
+    "incremental": true,
+    "noUnusedLocals": true, // Reports errors on unused local variables
+    "noUnusedParameters": true, // Reports errors on unused parameters
+    "strictPropertyInitialization": true, // Ensures proper initialization of properties in classes
+    "outDir": "./dist", // Sets the output directory for compiled files
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@pages/*": ["./src/pages/*"]
+    },
+    "sourceMap": true // Generates source map files for debugging
+  },
+  "include": ["global.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
